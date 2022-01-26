@@ -11,6 +11,7 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
             'id' => $data['id'],
             'rNama' => $data['rNama'],
             'rKeterangan' => $data['rKeterangan'],
+            'rTime' => $data['rTime'],
             'rUlang' => $data['rUlang'],
         ]);
     }
