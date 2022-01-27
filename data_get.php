@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
     $arrData['allData'] = [];
 
     while($data = mysqli_fetch_array($sql)){
-        $rowUlang = $data['rUlang']
+        $rowUlang = $data['rUlang'];
         $rUlang   = "";
         switch ($rowUlang) {
             case 'S':
@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
             'rNama' => $data['rNama'],
             'rKeterangan' => $data['rKeterangan'],
             'rTime' => $data['rTime'],
-            'rUlang' => $rUlang,
+            'rUlang' => $rUlang
         ]);
     }
 
