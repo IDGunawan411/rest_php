@@ -11,28 +11,28 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
         $rUlang   = "";
         switch ($rowUlang) {
             case 'S':
-                $rUlang = "Senin"
+                $rUlang = "Senin";
                 break;
             case 'SL':
-                $rUlang = "Selasa"
+                $rUlang = "Selasa";
                 break;
             case 'R': 
-                $rUlang = "Rabu"
+                $rUlang = "Rabu";
                 break;
             case 'K': 
-                $rUlang = "Kamis"
+                $rUlang = "Kamis";
                 break;
             case 'J': 
-                $rUlang = "Jumat"
+                $rUlang = "Jumat";
                 break;
             case 'SB': 
-                $rUlang = "Sabtu"
+                $rUlang = "Sabtu";
                 break;
             case 'M': 
-                $rUlang = "Minggu"
+                $rUlang = "Minggu";
                 break;
             default:
-                $rUlang = "Setiap Hari"
+                $rUlang = "Setiap Hari";
                 break;
         }
         array_push($arrData['allData'], (object)[
