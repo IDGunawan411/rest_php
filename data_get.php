@@ -40,7 +40,8 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
             'rNama' => $data['rNama'],
             'rKeterangan' => $data['rKeterangan'],
             'rTime' => $data['rTime'],
-            'rUlang' => $rUlang
+            'rUlang' => $rUlang,
+            'rUlangVal' => $data['rUlang']
         ]);
     }
 
