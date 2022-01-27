@@ -7,9 +7,9 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
     $arrData['allData'] = [];
 
     while($data = mysqli_fetch_array($sql)){
-        
-        $rUlang = "";
-        switch ($data['rUlang']) {
+        $rowUlang = $data['rUlang']
+        $rUlang   = "";
+        switch ($rowUlang) {
             case 'S':
                 $rUlang = "Senin"
                 break;
