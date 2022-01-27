@@ -16,8 +16,8 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         $data['Error'] = 'Harap Masukan Username/Password';
     }else{
         $sql = mysqli_query($koneksi, "SELECT * FROM data_user WHERE uUsername = '$uUsername' AND uPassword = '$uPassword'");
-        $rowcount=mysqli_num_rows($result);
-        $row=mysqli_fetch_array($result);
+        $rowcount=mysqli_num_rows($sql);
+        $row=mysqli_fetch_array($sql);
         
         if($rowcount > 0){
             $data['Data']['uNama'] = $row['uNama'];
