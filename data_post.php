@@ -13,11 +13,11 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     $rKeterangan = isset($_POST['rKeterangan']) ? $_POST['rKeterangan'] : NULL;
     $rTime       = isset($_POST['rTime']) ? $_POST['rTime'] : NULL;
     $rUlang      = isset($_POST['rUlang']) ? $_POST['rUlang'] : NULL;
-
+    $rUID        = isset($_POST['rUlang']) ? $_POST['rUID'] : NULL;
     if($rNama == NULL){
         $data['Error'] = 'Harap Masukan Nama';
     }else{
-        $sql = mysqli_query($koneksi, "INSERT INTO data_reminder VALUES(null,'$rNama','$rKeterangan','$rTime','$rUlang')");
+        $sql = mysqli_query($koneksi, "INSERT INTO data_reminder VALUES(null,'$rNama','$rKeterangan','$rTime','$rUlang','$rUID')");
 
         if($sql){
             $data['Data']['Nama'] = $rNama;
