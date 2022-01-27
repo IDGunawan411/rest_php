@@ -20,6 +20,8 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         $row=mysqli_fetch_array($sql);
         
         if($rowcount > 0){
+            
+            $data['Data']['uID'] = $row['uID'];
             $data['Data']['uNama'] = $row['uNama'];
             $data['Data']['uUsername'] = $row['uUsername'];
             $data['Data']['uPassword'] = $row['uPassword'];
